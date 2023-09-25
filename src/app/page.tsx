@@ -1,4 +1,11 @@
-import { Apresentation, CourseCard, Hero, Subscribe } from "@/components";
+import {
+  Apresentation,
+  CourseCard,
+  CoursesList,
+  Hero,
+  SectionApresentation,
+  Subscribe,
+} from "@/components";
 import Link from "next/link";
 import { BiSolidRightArrow } from "react-icons/bi";
 import { AiFillPlayCircle } from "react-icons/ai";
@@ -6,11 +13,13 @@ import { PopularCourses } from "@/components";
 import { courses } from "@/data/database";
 import { ICourse } from "@/interfaces/course.interface";
 
+import { FaCrown } from "react-icons/fa";
+
 export default function Home() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <Hero backgroundPath="assets/heroMain.jpg">
-        <div className="max-w-[660px]  space-y-10 lg:min-h-[60vh] mt-12">
+        <div className="max-w-[660px]  space-y-10  lg:mt-12">
           <Link href={""} className="space-x-2 flex items-center">
             <span className="text-orange-500">
               <AiFillPlayCircle />
@@ -40,22 +49,66 @@ export default function Home() {
           </div>
         </div>
       </Hero>
-      <div className="max-w-[1200px] m-auto">
-        <div className="flex py-20">
-          <h2 className="w-1/3 text-lg lg:text-4xl font-bold">
-            Technologies You Will Learn
-          </h2>
-          <div className="w-1/2">x</div>
-        </div>
+      <div className="max-w-[1200px] m-auto space-y-20 py-20 px-5">
+        <SectionApresentation />
         <PopularCourses />
-        <section className="flex flex-col md:flex-row mt-20 ml-3">
-          {courses.map((course: ICourse, index) => (
-            <CourseCard course={course} key={index} />
-          ))}
-        </section>
+        <CoursesList />
         <Subscribe />
       </div>
       <Apresentation />
+      <div className="max-w-[1200px] m-auto space-y-20 py-20 px-5">
+        <section className="flex flex-wrap lg:flex-nowrap">
+          <div className="pb-10 px-10">
+            <h3 className="font-bold text-lg pb-3">Features of Our Courses</h3>
+            <h1 className="font-bold text-4xl pb-3">Why Choose Us?</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div>
+            <ul>
+              <li className="flex flex-col lg:flex-row items-start my-2">
+                <div className="p-2 bg-orange-500 rounded-full text-2xl text-white inline-block m-2">
+                  <FaCrown />
+                </div>
+                <div className="px-2">
+                  <h2 className="font-bold text-lg">Best Industry Leaders</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper.
+                  </p>
+                </div>
+              </li>
+              <li className="flex flex-col lg:flex-row items-start my-2">
+                <div className="p-2 bg-orange-500 rounded-full text-2xl text-white inline-block m-2">
+                  <FaCrown />
+                </div>
+                <div className="px-2">
+                  <h2 className="font-bold text-lg">Best Industry Leaders</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper.
+                  </p>
+                </div>
+              </li>
+              <li className="flex flex-col lg:flex-row items-start my-2">
+                <div className="p-2 bg-orange-500 rounded-full text-2xl text-white inline-block m-2">
+                  <FaCrown />
+                </div>
+                <div className="px-2">
+                  <h2 className="font-bold text-lg">Best Industry Leaders</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

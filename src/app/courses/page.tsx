@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { CoursesList, Hero, Subscribe } from "@/components";
 
 export default function Courses() {
   return (
@@ -12,6 +12,10 @@ export default function Courses() {
           </p>
         </div>
       </Hero>
+      <div className="w-full m-auto max-w-[1200px] space-y-20 my-20">
+        <CoursesList />
+        <Subscribe />
+      </div>
     </main>
   );
 }

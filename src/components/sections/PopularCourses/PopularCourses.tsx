@@ -3,7 +3,7 @@ import Link from "next/link";
 const PopularCourses = () => {
   return (
     <section className="w-full my-10">
-      <div className="flex flex-col  lg:items-center justify-between lg:flex-row px-7">
+      <div className="flex flex-col  lg:items-center justify-between lg:flex-row">
         <div className="my-5 w-[300px]">
           <h3 className="font-bold">Top Categories</h3>
           <h2 className="text-2xl lg:text-4xl w-full font-bold">

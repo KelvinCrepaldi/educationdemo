@@ -5,6 +5,8 @@ import CourseCard from "./CourseCard/CourseCard";
 import PopularCourses from "./sections/PopularCourses/PopularCourses";
 import Subscribe from "./sections/Subscribe/Subscribe";
 import Apresentation from "./sections/Apresentation/Apresentation";
+import CoursesList from "./sections/CoursesList/CoursesList";
+import SectionApresentation from "./sections/SectionApresentation/SectionApresentation";
 export {
   Header,
   Footer,
@@ -13,4 +15,6 @@ export {
   PopularCourses,
   Subscribe,
   Apresentation,
+  CoursesList,
+  SectionApresentation,
 };

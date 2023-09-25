@@ -1,6 +1,6 @@
 const Subscribe = () => {
   return (
-    <section className=" flex flex-col justify-center lg:items-center md:text-center space-y-4 mx-7 my-20">
+    <section className=" flex flex-col justify-center lg:items-center md:text-center space-y-4">
       <h1 className="text-2xl md:text-3xl font-bold">Join Our Community</h1>
       <p className="text-base md:text-lg">
         Enter your email address to register to our newsletter subscription

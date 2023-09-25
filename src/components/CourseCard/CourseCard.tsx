@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CourseCard = ({ course }: { course: ICourse }) => {
   return (
-    <div className="w-full max-w-[450px] bg-white rounded border border-zinc-300 flex flex-col justify-between m-3">
+    <article className="w-full max-w-[450px] bg-white rounded border border-zinc-300 flex flex-col justify-between m-2">
       <div className="relative w-full aspect-video">
         <Image
           src={course.imgPath}
@@ -25,7 +25,7 @@ const CourseCard = ({ course }: { course: ICourse }) => {
           See more...
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 
