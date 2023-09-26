@@ -4,11 +4,11 @@ import { ICourse } from "@/interfaces/course.interface";
 
 const CoursesList = () => {
   return (
-    <section className="flex flex-col md:flex-row">
+    <div className="flex flex-col md:flex-row">
       {courses.map((course: ICourse, index) => (
         <CourseCard course={course} key={index} />
       ))}
-    </section>
+    </div>
   );
 };
 

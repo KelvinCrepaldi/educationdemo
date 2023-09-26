@@ -21,7 +21,7 @@ const apresentationList = [
 const Apresentation = () => {
   return (
     <section
-      className="w-full relative z-0 text-white bg-fixed pt-10"
+      className="w-full relative z-0 text-white bg-fixed my-10"
       style={{ backgroundImage: `url('/assets/heroCourses.jpg')` }}
     >
       <div className="absolute top-0 left-0 w-full h-full z-0 bg-[#0d778fd5] "></div>

@@ -1,4 +1,4 @@
-import { CoursesList, Hero, Subscribe } from "@/components";
+import { CoursesList, Hero, SectionHeader, Subscribe } from "@/components";
 
 export default function Courses() {
   return (
@@ -12,10 +12,15 @@ export default function Courses() {
           </p>
         </div>
       </Hero>
-      <div className="w-full m-auto max-w-[1200px] space-y-20 my-20">
+      <section className="w-full m-auto max-w-[1200px] space-y-20 my-20">
+        <SectionHeader
+          subtitle="Course Program"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+          title="Popular Courses"
+        />
         <CoursesList />
-        <Subscribe />
-      </div>
+      </section>
+      <Subscribe />
     </main>
   );
 }

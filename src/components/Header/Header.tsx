@@ -32,7 +32,7 @@ const Header = () => {
       <div className="max-w-[1200px] m-auto p-3 flex justify-between items-center">
         <Image src={LogoImg} alt="Education demo logo" />
 
-        <nav className="flex ">
+        <nav className="flex items-center">
           <ul
             className={`flex flex-col lg:flex-row absolute lg:static left-0 top-[100px] bg-[#ECF0F2] divide-y lg:divide-y-0 lg:bg-transparent lg:text-white w-full overflow-hidden lg:flex ${
               isOpen ? "" : "hidden"
@@ -50,15 +50,17 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Link
-            className="bg-orange-500 rounded-full py-2 px-7 text-white font-bold hidden lg:inline-block"
-            href={""}
-          >
-            START LEARNING
-          </Link>
+          <div>
+            <Link
+              className="bg-orange-500 rounded-full py-2 px-5 mx-2 text-white font-bold hidden lg:inline-block min-w-max"
+              href={""}
+            >
+              START LEARNING
+            </Link>
+          </div>
         </nav>
         <button
-          className="lg:hidden text-white bg-orange-500 p-2 text-xl rounded"
+          className="lg:hidden text-white bg-orange-500 p-2  text-xl rounded"
           onClick={handleMenu}
         >
           {!isOpen ? <GiHamburgerMenu /> : <AiOutlineClose />}

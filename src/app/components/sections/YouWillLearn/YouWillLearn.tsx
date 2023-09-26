@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-const SectionApresentation = () => {
+const YouWillLearn = () => {
   return (
     <section>
-      <h2 className="text-xl lg:text-4xl font-bold w-full text-center mb-10">
+      <h2 className="text-xl lg:text-4xl font-bold w-full text-center my-10 mt-20">
         Technologies You Will Learn
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-center ">
@@ -94,4 +94,4 @@ const SectionApresentation = () => {
   );
 };
 
-export default SectionApresentation;
+export default YouWillLearn;
