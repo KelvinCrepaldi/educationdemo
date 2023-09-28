@@ -1,94 +1,30 @@
 import Image from "next/image";
 
-const YouWillLearn = () => {
+const techPaths = [
+  "/assets/techs/css3.svg",
+  "/assets/techs/react.svg",
+  "/assets/techs/angular.svg",
+  "/assets/techs/html5.svg",
+  "/assets/techs/js.svg",
+  "/assets/techs/node-js.svg",
+  "/assets/techs/python.svg",
+];
+
+const YouWillLearn = (): JSX.Element => {
   return (
-    <section>
-      <h2 className="text-xl lg:text-4xl font-bold w-full text-center my-10 mt-20">
-        Technologies You Will Learn
-      </h2>
-      <div className="flex flex-col lg:flex-row justify-center items-center ">
-        <div className=" flex flex-wrap">
-          <div className="relative aspect-square w-[50px] m-3">
+    <section className="p-5 max-w-[1200px] m-auto lg:flex my-20">
+      <h3 className="w-1/2 pr-20">Technologies You Will Learn</h3>
+      <div className=" flex flex-wrap my-10 lg:my-0">
+        {techPaths.map((imgTech: string, index: number) => (
+          <div className="relative aspect-square w-[50px] m-3" key={index}>
             <Image
-              src={"/assets/techs/css3.svg"}
-              alt="css3 logo"
+              src={imgTech}
+              alt="Tech Logo"
               fill
               className="relative"
             ></Image>
           </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/react.svg"}
-              alt="react logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/angular.svg"}
-              alt="angular logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/angular.svg"}
-              alt="angular logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/html5.svg"}
-              alt="html5 logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/js.svg"}
-              alt="javascript logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/node-js.svg"}
-              alt="node logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/python.svg"}
-              alt="python logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-
-          <div className="relative aspect-square w-[50px] m-3">
-            <Image
-              src={"/assets/techs/vuejs.svg"}
-              alt="vue logo"
-              fill
-              className="relative"
-            ></Image>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

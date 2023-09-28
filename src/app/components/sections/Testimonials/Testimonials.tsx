@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AiFillStar } from "react-icons/ai";
 
 const testimonials = [
   {
@@ -23,29 +24,40 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+export interface testimonials {
+  name: string;
+  text: string;
+  imgPath: string;
+}
+
+const Testimonials = (): JSX.Element => {
   return (
-    <section className="max-w-[1200px] m-auto">
-      <div className="my-20 flex w-full mx-5">
-        <div className="max-w-[500px]">
-          <h6 className="text-lg font-bold">Testimonials</h6>
-          <h1 className="text-4xl font-bold">
-            Trusted by Thousand of Students and Tutors
-          </h1>
+    <section className="max-w-[1200px] m-auto px-5">
+      <div className="my-20 flex w-full  justify-between items-center">
+        <div className="max-w-[600px]">
+          <h6 className=" mb-5">Testimonials</h6>
+          <h3>Trusted by Thousand of Students and Tutors</h3>
         </div>
         <div className="flex">
-          <div className="text-5xl">10.0</div>
+          <h1 className="  mr-3">4.8</h1>
           <div>
+            <div className="text-yellow-500 flex justify-start">
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+            </div>
             <p>2,394 Ratings</p>
             <p>Google Reviews</p>
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center">
-        {testimonials.map((card, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {testimonials.map((card: testimonials, index: number) => (
           <div
             key={index}
-            className="bg-white rounded-[20px] flex flex-col  p-10 pt-16 w-full max-w-[550px] relative my-10 mx-3"
+            className="bg-white rounded-[20px] flex-shrink flex-grow flex flex-col  p-10 pt-16 w-full relative my-7 pb-5 shadow hover:shadow-lg transition-all"
           >
             <Image
               src={card.imgPath}
@@ -55,8 +67,15 @@ const Testimonials = () => {
               className="absolute -top-10 rounded-xl shadow-lg"
             ></Image>
 
-            <p>{card.text}</p>
-            <h6 className="font-bold pt-3">{card.name}</h6>
+            <p className="w-full">{card.text}</p>
+            <h6 className="pt-3">{card.name}</h6>
+            <div className="text-yellow-500 flex justify-end">
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+              <AiFillStar />
+            </div>
           </div>
         ))}
       </div>

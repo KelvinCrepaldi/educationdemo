@@ -1,6 +1,6 @@
 import { CoursesList, Hero, SectionHeader, Subscribe } from "@/components";
 
-export default function Courses() {
+export default function Courses(): JSX.Element {
   return (
     <main className="min-h-screen">
       <Hero backgroundPath="assets/heroCourses.jpg">
@@ -12,7 +12,7 @@ export default function Courses() {
           </p>
         </div>
       </Hero>
-      <section className="w-full m-auto max-w-[1200px] space-y-20 my-20">
+      <section className="w-full m-auto max-w-[1200px] space-y-20 my-20 px-5">
         <SectionHeader
           subtitle="Course Program"
           text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."

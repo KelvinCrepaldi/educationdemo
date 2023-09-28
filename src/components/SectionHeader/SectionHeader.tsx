@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CustomLink from "../CustomLink/CustomLink";
 
 const SectionHeader = ({
   title,
@@ -14,20 +15,15 @@ const SectionHeader = ({
   return (
     <div className="flex flex-col  lg:items-center justify-between lg:flex-row">
       <div className="my-5 min-w-fit mr-6">
-        <h6 className="font-bold mb-5">{subtitle}</h6>
-        <h2 className="text-2xl lg:text-5xl font-bold">{title}</h2>
+        <h6 className="font-bold">{subtitle}</h6>
+        <h3 className="font-bold">{title}</h3>
       </div>
-      <div className="border-l-2 pl-14 border-orange-500 my-5 p-5 flex">
+      <div className="border-l-2 border-orange-500 my-5 py-5 px-3  pl-7 lg:pl-14 flex">
         <p>{text}</p>
       </div>
       {linkPath ? (
         <div className="min-w-fit">
-          <Link
-            href={"/courses"}
-            className="bg-orange-500 rounded-full py-2 px-7 text-white font-bold my-5"
-          >
-            VIEW ALL COURSES
-          </Link>
+          <CustomLink href={"/courses"}>VIEW ALL COURSES</CustomLink>
         </div>
       ) : null}
     </div>

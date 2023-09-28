@@ -8,8 +8,9 @@ import CoursesHome from "./components/sections/CoursesHome/CoursesHome";
 import Features from "./components/sections/Features/Features";
 import Apresentation from "./components/sections/Apresentation/Apresentation";
 import Testimonials from "./components/sections/Testimonials/Testimonials";
+import CustomLink from "@/components/CustomLink/CustomLink";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <main className="min-h-screen">
       <Hero backgroundPath="assets/heroMain.jpg">
@@ -21,23 +22,18 @@ export default function Home() {
 
             <button>ON-DEMAND VIDEO TRAINING</button>
           </Link>
-          <h1 className=" text-[35px] md:text-[70px] leading-none font-bold">
-            Education Opens up the Mind
-          </h1>
-          <p className="md:text-lg">
+          <h1>Education Opens up the Mind</h1>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
           <div className="flex">
+            <CustomLink href={"/courses"}>START COURSE</CustomLink>
             <Link
-              className="bg-orange-500 rounded-full py-2 px-7 text-white font-bold mr-10"
               href={"/courses"}
+              className="rounded-full text-white font-bold hover:text-orange-400 flex items-center justify-center transition min-w-fit space-x-2"
             >
-              START COURSE
-            </Link>
-            <Link href={"/courses"} className="flex space-x-2 items-center">
               <BiSolidRightArrow />
-
               <span>ALL COURSES</span>
             </Link>
           </div>

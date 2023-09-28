@@ -1,6 +1,6 @@
 import { CoursesList, SectionHeader } from "@/components";
 
-const CoursesHome = () => {
+const CoursesHome = (): JSX.Element => {
   return (
     <section className="max-w-[1200px] m-auto space-y-20 my-20 px-5">
       <SectionHeader

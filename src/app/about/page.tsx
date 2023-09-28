@@ -1,6 +1,8 @@
-import { Hero } from "@/components";
+import { Hero, Subscribe } from "@/components";
+import FounderApresentation from "./sections/FounderApresentation/FounderApresentation";
+import FounderAbout from "./sections/FounderAbout/FounderAbout";
 
-export default function About() {
+export default function About(): JSX.Element {
   return (
     <main className="min-h-screen">
       <Hero backgroundPath="assets/heroCourses.jpg">
@@ -12,6 +14,9 @@ export default function About() {
           </p>
         </div>
       </Hero>
+      <FounderApresentation />
+      <FounderAbout />
+      <Subscribe />
     </main>
   );
 }

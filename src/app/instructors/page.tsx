@@ -1,6 +1,7 @@
-import { Hero } from "@/components";
+import { Hero, Subscribe } from "@/components";
+import OurInstructors from "./components/sections/OurInstructors";
 
-export default function Instructors() {
+export default function Instructors(): JSX.Element {
   return (
     <main className="min-h-screen">
       <Hero backgroundPath="assets/heroCourses.jpg">
@@ -12,6 +13,9 @@ export default function Instructors() {
           </p>
         </div>
       </Hero>
+
+      <OurInstructors />
+      <Subscribe />
     </main>
   );
 }

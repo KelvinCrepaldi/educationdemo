@@ -18,27 +18,27 @@ const apresentationList = [
   },
 ];
 
-const Apresentation = () => {
+const Apresentation = (): JSX.Element => {
   return (
     <section
-      className="w-full relative z-0 text-white bg-fixed my-10"
+      className="w-full relative z-0 text-white bg-fixed my-10 pt-5"
       style={{ backgroundImage: `url('/assets/heroCourses.jpg')` }}
     >
-      <div className="absolute top-0 left-0 w-full h-full z-0 bg-[#0d778fd5] "></div>
-      <div className="relative z-10 lg:flex max-w-[1200px] m-auto px-10">
-        <ul className="space-y-10 lg:space-y-0 lg:p-5 flex lg:flex-row flex-col">
+      <div className="absolute top-0 left-0 w-full h-full z-0 bg-[#0d778fd5]"></div>
+      <div className="relative z-10 lg:flex max-w-[1200px] m-auto ">
+        <ul className="lg:space-y-0 lg:space-x-3 flex lg:flex-row flex-col">
           {apresentationList.map((element, index) => (
-            <li key={index} className="p-5 flex lg:justify-end flex-col">
-              <h3 className="font-bold">{element.title}</h3>
+            <li key={index} className="px-5 py-3 flex lg:justify-end flex-col">
+              <h6 className="font-bold">{element.title}</h6>
               <p>{element.description}</p>
             </li>
           ))}
         </ul>
-        <div className="bg-white text-black mt-10 p-10 font-bold ">
-          <h3 className="mb-1"> Study at Your Own Pace</h3>
-          <h2 className="text-xl mb-10">
+        <div className="bg-white text-black mt-10 p-10 font-bold mx-10 lg:mx-0">
+          <h6 className="mb-1"> Study at Your Own Pace</h6>
+          <h5 className="mb-10">
             Boost Your Career by Learning Skills in High Demand{" "}
-          </h2>
+          </h5>
 
           <Link href={""}>GET STARTED</Link>
         </div>

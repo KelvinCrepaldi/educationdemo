@@ -13,7 +13,7 @@ const Hero = ({
       style={{ backgroundImage: `url('${backgroundPath}')` }}
     >
       <div className="absolute w-full h-full rounded-ee-[50px] lg:rounded-ee-[150px] bg-[#0d778fd5] top-0"></div>
-      <div className="w-full  max-w-[1200px] p-5 mb-20 lg:mx-20 z-10">
+      <div className="w-full  max-w-[1200px] p-5 mb-20 z-10 mx-auto">
         {children}
       </div>
     </section>

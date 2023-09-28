@@ -5,7 +5,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { AiFillYoutube, AiFillInstagram } from "react-icons/ai";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <footer className=" bg-white w-full p-10">
       <div className="max-w-[1200px] m-auto  py-10 flex flex-col lg:flex-row">
@@ -20,22 +20,22 @@ const Footer = () => {
             ad minim.
           </p>
           <div className="flex space-x-3 text-2xl mt-10">
-            <div className="hover:text-orange-500 m-1 p-1 bg-slate-200 rounded">
+            <div className="text-orange-500 hover:text-orange-400  m-1 p-1 rounded">
               <BsFacebook />
             </div>
-            <div className="hover:text-orange-500 m-1 p-1 bg-slate-200 rounded">
+            <div className="text-orange-500 hover:text-orange-400 m-1 p-1 rounded">
               <RiTwitterXFill />
             </div>
-            <div className="hover:text-orange-500 m-1 p-1 bg-slate-200 rounded">
+            <div className="text-orange-500 hover:text-orange-400 m-1 p-1 rounded">
               <AiFillYoutube />
             </div>
-            <div className="hover:text-orange-500 m-1 p-1 bg-slate-200 rounded">
+            <div className="text-orange-500 hover:text-orange-400 m-1 p-1 rounded">
               <AiFillInstagram />
             </div>
           </div>
         </div>
         <div className="px-10 min-w-max">
-          <h1 className="text-xl font-bold mb-5"> Popular Courses</h1>
+          <h5 className="mt-5"> Popular Courses</h5>
           <nav>
             <ul>
               <li className="hover:text-teal-500">
@@ -60,12 +60,12 @@ const Footer = () => {
           </nav>
         </div>
         <div className="px-10 min-w-max ">
-          <h1 className="text-xl font-bold mb-5">Contact Info</h1>
-          <h3 className="font-bold">Address</h3>
+          <h5 className="mt-5">Contact Info</h5>
+          <h6>Address</h6>
           <p>123 Fifth Avenue, New York, NY 10160</p>
-          <h3 className="font-bold">Phone</h3>
+          <h6>Phone</h6>
           <p>929-242-6868</p>
-          <h3 className="font-bold">Email</h3>
+          <h6>Email</h6>
           <p>contact@info.com</p>
         </div>
       </div>

@@ -5,6 +5,7 @@ import LogoImg from "public/assets/logo-regular-free-img.png";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import CustomLink from "../CustomLink/CustomLink";
 
 type pageType = {
   name: string;
@@ -20,7 +21,7 @@ const pagesPaths: pageType[] = [
   { name: "Contact", urlPath: "/contact" },
 ];
 
-const Header = () => {
+const Header = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleMenu = (): void => {
@@ -50,14 +51,8 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <div>
-            <Link
-              className="bg-orange-500 rounded-full py-2 px-5 mx-2 text-white font-bold hidden lg:inline-block min-w-max"
-              href={""}
-            >
-              START LEARNING
-            </Link>
-          </div>
+
+          <CustomLink href={""}>START LEARNING</CustomLink>
         </nav>
         <button
           className="lg:hidden text-white bg-orange-500 p-2  text-xl rounded"

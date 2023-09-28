@@ -1,6 +1,6 @@
 import { Hero } from "@/components";
 
-export default function Contact() {
+export default function Contact(): JSX.Element {
   return (
     <main className="min-h-screen">
       <Hero backgroundPath="assets/heroCourses.jpg">
