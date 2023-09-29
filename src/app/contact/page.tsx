@@ -1,4 +1,5 @@
-import { Hero } from "@/components";
+import { Hero, Subscribe } from "@/components";
+import ContactUs from "./sections/ContactUs/ContactUs";
 
 export default function Contact(): JSX.Element {
   return (
@@ -12,6 +13,8 @@ export default function Contact(): JSX.Element {
           </p>
         </div>
       </Hero>
+      <ContactUs />
+      <Subscribe />
     </main>
   );
 }
