@@ -3,12 +3,14 @@ import { BsFacebook, BsFillTelephoneFill } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
+import { DecorativeBar } from "@/components";
 
 const ContactUs = () => {
   return (
     <section className="max-w-[1200px] mx-auto my-20 px-5 grid lg:grid-cols-2 ">
       <div className="mr-5">
         <h3 className="mb-5">Contact Us</h3>
+        <DecorativeBar />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.

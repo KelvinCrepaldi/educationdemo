@@ -5,7 +5,7 @@ import Faq from "./sections/Faq/Faq";
 export default function Pricing(): JSX.Element {
   return (
     <main className="min-h-screen">
-      <Hero backgroundPath="assets/heroCourses.jpg">
+      <Hero backgroundPath="assets/heroPricing.jpg">
         <div className="max-w-[660px]  space-y-2  ">
           <h1 className="text-[32px] lg:text-[80px]">Pricing & FAQ</h1>
           <p>

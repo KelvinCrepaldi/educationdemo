@@ -6,6 +6,7 @@ import Subscribe from "./Subscribe/Subscribe";
 import CoursesList from "./CoursesList/CoursesList";
 import SectionApresentation from "../app/components/sections/YouWillLearn/YouWillLearn";
 import SectionHeader from "./SectionHeader/SectionHeader";
+import DecorativeBar from "./DecorativeBar/DecorativeBar";
 export {
   Header,
   Footer,
@@ -15,4 +16,5 @@ export {
   CoursesList,
   SectionApresentation,
   SectionHeader,
+  DecorativeBar,
 };

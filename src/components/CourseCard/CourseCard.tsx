@@ -25,6 +25,12 @@ const CourseCard = ({ course }: { course: ICourse }): JSX.Element => {
           See more...
         </Link>
       </div>
+      <div className="pb-3 px-4 flex flex-col items-end">
+        <div className="w-full h-2 rounded opacity-50 bg-slate-400"></div>
+        <span className="font-bold text-xs text-teal-800 opacity-90 mt-1">
+          0% Complete
+        </span>
+      </div>
     </article>
   );
 };

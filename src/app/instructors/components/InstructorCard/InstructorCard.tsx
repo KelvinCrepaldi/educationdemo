@@ -16,14 +16,14 @@ export interface InstructorCardProps {
 const InstructorCard = ({ instructor }: InstructorCardProps): JSX.Element => {
   return (
     <article className="max-w-[360px] flex flex-col m-2 bg-white rounded-[20px] shadow hover:shadow-lg">
-      <div className="w-full aspect-video relative">
-        <Image
-          src={instructor.imagePath}
-          alt={`${instructor} photo profile`}
-          fill
-          className="relative rounded-t-[20px]"
-        ></Image>
-      </div>
+      <Image
+        src={instructor.imagePath}
+        alt={`${instructor} photo profile`}
+        width={360}
+        height={237}
+        className="rounded-t-[20px]"
+      ></Image>
+
       <div className="p-7 space-y-3">
         <h6 className="text-sm font-bold">{instructor.courseType}</h6>
         <h5 className="font-bold">{instructor.name}</h5>

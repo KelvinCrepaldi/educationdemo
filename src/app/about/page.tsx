@@ -5,7 +5,7 @@ import FounderAbout from "./sections/FounderAbout/FounderAbout";
 export default function About(): JSX.Element {
   return (
     <main className="min-h-screen">
-      <Hero backgroundPath="assets/heroCourses.jpg">
+      <Hero backgroundPath="assets/heroAbout.jpg">
         <div className="max-w-[660px]  space-y-2  ">
           <h1 className="text-[32px] lg:text-[80px]">About Us</h1>
           <p>

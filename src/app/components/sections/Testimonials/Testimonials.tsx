@@ -33,13 +33,13 @@ export interface testimonials {
 const Testimonials = (): JSX.Element => {
   return (
     <section className="max-w-[1200px] m-auto px-5">
-      <div className="my-20 flex w-full  justify-between items-center">
+      <div className="my-20 flex flex-col items-start md:flex-row md:items-center">
         <div className="max-w-[600px]">
           <h6 className=" mb-5">Testimonials</h6>
           <h3>Trusted by Thousand of Students and Tutors</h3>
         </div>
-        <div className="flex">
-          <h1 className="  mr-3">4.8</h1>
+        <div className="flex text-gray-900 mt-5 md:mt-0 md:mr-5 md:justify-center md:items-center w-full">
+          <h1 className="mr-3 lg:text-8xl text-5xl md:text-7xl">4.8</h1>
           <div>
             <div className="text-yellow-500 flex justify-start">
               <AiFillStar />

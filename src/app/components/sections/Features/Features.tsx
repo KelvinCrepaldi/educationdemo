@@ -33,7 +33,7 @@ const Features = (): JSX.Element => {
                 <AiFillClockCircle />
               </div>
               <div>
-                <h6 className="font-bold">Best Industry Leaders</h6>
+                <h6 className="font-bold">Learn Online at Your Own Pace</h6>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper.
@@ -45,7 +45,7 @@ const Features = (): JSX.Element => {
                 <FaCertificate />
               </div>
               <div>
-                <h6 className="font-bold">Best Industry Leaders</h6>
+                <h6 className="font-bold">Professional Certification</h6>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper.

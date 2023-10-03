@@ -1,4 +1,4 @@
-import { SectionHeader } from "@/components";
+import { DecorativeBar, SectionHeader } from "@/components";
 import Image from "next/image";
 
 const FounderApresentation = (): JSX.Element => {
@@ -19,10 +19,13 @@ const FounderApresentation = (): JSX.Element => {
           src={"/assets/aboutPerson.jpg"}
           width={752}
           height={511}
-          className="pr-5 w-full min-w-[540px]"
+          className="pr-5 w-full"
+          style={{ objectFit: "contain" }}
         />
+
         <div className="p-5">
           <h5 className="pb-10">Learn Something Every Day</h5>
+          <DecorativeBar />
           <p>
             Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in

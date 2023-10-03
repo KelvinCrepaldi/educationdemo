@@ -50,9 +50,10 @@ const Header = (): JSX.Element => {
                 </Link>
               </li>
             ))}
+            <li className="hidden lg:block pl-5">
+              <CustomLink href={""}>START LEARNING</CustomLink>
+            </li>
           </ul>
-
-          <CustomLink href={""}>START LEARNING</CustomLink>
         </nav>
         <button
           className="lg:hidden text-white bg-orange-500 p-2  text-xl rounded"

@@ -5,6 +5,7 @@ import {
   IBenefit,
   SubscriptionCardProps,
 } from "@/interfaces/SubscriptionPlan/subscription.interface";
+import { DecorativeBar } from "@/components";
 const SubscriptionCard = ({
   subscription,
 }: SubscriptionCardProps): JSX.Element => {
@@ -16,8 +17,11 @@ const SubscriptionCard = ({
           <span className="text-3xl mr-4">${subscription.price}</span>/
           {subscription.period}
         </p>
+        <div>
+          <DecorativeBar />
+        </div>
       </div>
-      <ul className="mt-14">
+      <ul className="mt-11">
         {subscription.benefits.map((benefit: IBenefit, index: number) => (
           <li key={index}>
             <p

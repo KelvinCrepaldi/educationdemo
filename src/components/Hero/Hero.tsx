@@ -9,7 +9,7 @@ const Hero = ({
 }): JSX.Element => {
   return (
     <section
-      className="relative w-full pt-28 rounded-ee-[50px] lg:rounded-ee-[150px] flex items-center justify-center text-white  bg-cover bg-fixed"
+      className="relative w-full pt-28 rounded-ee-[50px] lg:rounded-ee-[150px] flex items-center justify-center text-white  bg-cover"
       style={{ backgroundImage: `url('${backgroundPath}')` }}
     >
       <div className="absolute w-full h-full rounded-ee-[50px] lg:rounded-ee-[150px] bg-[#0d778fd5] top-0"></div>
